@@ -1,0 +1,19 @@
+---
+// Styles
+import '../styles/global.css';
+
+// Components
+import BaseHead from '../components/BaseHead.astro'
+const {title} = Astro.props
+---
+<html lang="en">
+<head>
+<BaseHead title={title}/>
+	<style>
+		/** scoped styles go here */
+	</style>
+</head>
+<body>
+	<slot/>
+</body>
+</html>
