@@ -1,14 +1,18 @@
 ---
 // Component Imports
 import BaseLayout from '../layouts/BaseLayout.astro'
+import Button from '../components/Buttons/Button'
 
-const title = "Contact"
+const title = "Components"
 ---
 <BaseLayout title={title}>
-  <h1>Contact Page</h1>
+  <h1>Components Page</h1>
   <a href="/">Home</a>
   <br/>
   <a href="/components">Components</a>
   <br/>
   <a href="/contact">Contact</a>
+  <br/>
+  <br/>
+  <Button client:load>Click Me</Button>
 </BaseLayout>
